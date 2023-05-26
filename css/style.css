@@ -312,15 +312,22 @@ aside {
   background-color: #f8f9fb;
   position: relative;
 }
+aside .h4 {
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #4c4c4d;
+  padding-bottom: 25px;
+}
 aside input {
-  margin: 50px 35px;
+  margin: 30px 35px;
   border: 1px solid #1eafed;
   height: 50px;
-  width: 280px;
+  width: 300px;
 }
-aside i {
+aside .fa-magnifying-glass {
   position: absolute;
-  top: 70px;
+  top: 50px;
   right: 60px;
 }
 aside input::placeholder {
@@ -335,9 +342,112 @@ aside .categories h4 {
   font-family: 'Lora', serif;
   font-size: 1.4rem;
   font-style: italic;
+  color: #4c4c4d;
+  padding-bottom: 25px;
 }
 aside .categories a {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  border-bottom: 1px solid #4c4c4d;
+  color: black;
+}
+aside .categories span {
+  float: right;
+  color: #cdcdcd;
+}
+aside .categories li {
+  border-bottom: 1px solid #cdcdcd;
+  margin-right: 50px;
+}
+aside .aside_articles {
+  padding-top: 40px;
+  padding-left: 35px;
+}
+aside .aside_articles h4 {
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #4c4c4d;
+  padding-bottom: 25px;
+}
+aside .aside_articles .article_block {
+  margin-right: 50px;
+  line-height: 25px;
+}
+aside .aside_articles .article_block img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  float: left;
+  padding-right: 10px;
+}
+aside .aside_articles .article_block h3 {
+  font-family: 'Lora', serif;
+}
+aside .aside_articles .article_block span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  color: #4c4c4d;
+}
+aside .aside_articles .article_block span i {
+  margin: 0 5px;
+}
+aside .tag_block {
+  margin: 0 50px 0 50px;
+  padding-top: 20px;
+}
+aside .tag_block h4 {
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #4c4c4d;
+  padding-bottom: 25px;
+}
+aside .tag_block button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  line-height: 20px;
+  margin: 3px;
+}
+aside .newsletter {
+  margin-top: 70px;
+}
+aside .newsletter .filter {
+  margin-top: 40px;
+  background: url(../images/bg_1.jpg) 50% 25% no-repeat;
+  filter: brightness(40%);
+  background-position: center;
+  background-size: 500px;
+  width: 350px;
+  height: 320px;
+  position: absolute;
+}
+aside .newsletter .news_text {
+  position: relative;
+}
+aside .newsletter .news_text h4 {
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #4c4c4d;
+  padding-bottom: 25px;
+  color: white;
+  padding-top: 70px;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+aside .newsletter .news_text p {
+  font-family: 'Poppins', sans-serif;
+  color: #cdcdcd;
+  line-height: 25px;
+  padding-top: 70px;
+  padding-left: 20px;
+  padding-right: 50px;
+  padding-top: 10px;
+}
+aside .newsletter .news_text input {
+  height: 50px;
+  width: 300px;
+  margin-left: 20px;
+  background: transparent;
+  border: 1px solid #cdcdcd;
 }

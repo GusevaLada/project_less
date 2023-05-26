@@ -149,19 +149,26 @@ main{
 }
 
 aside{
+  .h4{
+      font-family: @font_lora;
+      font-size: 1.4rem;
+      font-style: italic;
+      color: @darkgrey;
+      padding-bottom: 25px;
+  }
   width: 26%;
   background-color:#f8f9fb;
   position: relative;
   input{
-      margin: 50px 35px;
+      margin: 30px 35px;
       border: 1px solid @blue;
       height: 50px;
-      width: 280px;
+      width: 300px;
 
   }
-  & i{
+  .fa-magnifying-glass{
       position: absolute;
-      top: 70px;
+      top: 50px;
       right: 60px;
   }
   input::placeholder{
@@ -171,15 +178,109 @@ aside{
   .categories{
     padding-left:35px;
     line-height:50px;
+    
     h4{
-      font-family: @font_lora;
-      font-size: 1.4rem;
-      font-style: italic;
+      .h4();
     }
     a{
       text-decoration: none;
       font-family: @font_poppins;
-      border-bottom: 1px solid @darkgrey;
+      color: black;
     }
+    & span{
+      float: right;
+      color: @grey;
+    }
+    li{
+      border-bottom: 1px solid @grey;
+      margin-right: 50px;
+    }
+  }
+  .aside_articles{
+    padding-top:40px;
+    padding-left: 35px; 
+
+    h4{
+      .h4();
+      
+    }
+    .article_block{
+      margin-right: 50px;
+      line-height: 25px;
+      img{
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        float: left;
+        padding-right: 10px;
+      }
+      h3{
+        font-family: @font_lora;
+
+      }
+      span{
+        font-family: @font_poppins;
+        font-size: 0.8rem;
+        color: @darkgrey;
+        i{
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  .tag_block{
+    margin: 0 50px 0 50px;
+    padding-top: 20px;
+    h4{
+      .h4();
+    }
+    button{
+      font-family: @font_poppins;
+      font-size: 11px;
+      line-height: 20px;
+      margin: 3px;  
+    }
+  }
+  .newsletter{
+      margin-top: 70px;
+      .filter{
+        margin-top: 40px;
+        background: url(../images/bg_1.jpg) 50% 25% no-repeat;
+        filter: brightness(40%);
+        background-position: center;
+        background-size: 500px;
+        width: 350px;
+        height: 320px;  
+        position: absolute;      
+      }
+      .news_text{
+        .padd(){
+          padding-top: 70px;
+          padding-left: 20px;
+          padding-right: 50px;
+        }
+        
+        position: relative;
+        h4{
+          .h4();
+          color: white;
+          .padd();
+        }
+        p{
+          font-family: @font_poppins;
+          color: @grey;
+          line-height: 25px;
+          .padd();
+          padding-top: 10px;
+        }
+        input{
+          height: 50px;
+          width: 300px;
+          margin-left: 20px;
+          background: transparent;
+          border: 1px solid @grey;
+          
+        }
+      }
   }
 }
