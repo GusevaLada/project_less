@@ -260,7 +260,12 @@ main {
   width: 50%;
   margin: 0 0 0 25%;
   padding-top: 50px;
-  border-left: 1px solid #e9e9e9;
+  border-left: 1px solid #cdcdcd;
+}
+main .post_block {
+  padding-left: 50px;
+  margin-bottom: 50px;
+  display: flex;
   opacity: 0;
   animation: show 3s forwards;
 }
@@ -272,32 +277,63 @@ main {
     opacity: 1;
   }
 }
-main .post_block {
-  padding-left: 50px;
-  margin-bottom: 50px;
+main .post_block .text_block {
+  width: 70%;
 }
-main .post_block h2 {
-  font-family: 'Lora', serif;
+main .post_block .text_block h3 {
   font-size: 30px;
   line-height: 45px;
   font-weight: 400;
   padding-right: 25px;
   padding-bottom: 20px;
 }
-main .post_block .post_block_text {
+main .post_block .text_block h3 a {
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Lora', serif;
+}
+main .post_block .text_block .p {
+  font-family: 'Poppins', sans-serif;
+  color: #cdcdcd;
+  margin: 0 10px;
+  font-size: 0.9rem;
+}
+main .post_block .text_block .post_block_text {
   display: flex;
+  font-family: 'Poppins', sans-serif;
+}
+main .post_block .text_block .post_block_text p {
+  font-family: 'Poppins', sans-serif;
+  color: #cdcdcd;
+  margin: 0 10px;
+  font-size: 0.9rem;
+}
+main .post_block .text_block .post_block_text a {
+  text-decoration: none;
+  color: #000000;
+  line-height: 25px;
+}
+main .post_block .text_block p {
+  font-family: 'Poppins', sans-serif;
+  color: #cdcdcd;
+  margin: 0 10px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #4c4c4d;
+  margin: 15px 0;
+  line-height: 25px;
+}
+main .post_block .text_block a {
+  text-decoration: none;
+  color: #1eafed;
+  font-family: 'Poppins', sans-serif;
 }
 main .post_block img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  float: left;
   margin-right: 30px;
-}
-main .post_block p {
-  font-family: 'Poppins', sans-serif;
-  color: #cdcdcd;
 }
 main .page_button {
   margin: 50px 10px;
