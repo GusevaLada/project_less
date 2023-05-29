@@ -12,17 +12,18 @@
 @darkgrey: #4c4c4d;
 @blue: #1EAFED;
 @grey:#cdcdcd;
+@black: #000;
 body{
   display: flex;
 }
 nav{
   width: 20%;
   margin: auto 0;
- 
   position:fixed;
   ul{
     padding-left: 30px;
     padding-top: 100px;
+
     a{
       text-decoration: none;
       color: @darkgrey;
@@ -32,7 +33,7 @@ nav{
       line-height: 40px; 
       transition: all 0.2s ease-out;
         &:hover{
-          color: black;
+          color: @black;
           border-bottom: 3px solid @blue;    
         }
       }   
@@ -53,14 +54,14 @@ nav{
 
   .sub_block{
     padding-left: 15px;
-    padding-top: 130px;
+    padding-top: 30%;
     h4{
       font-family: @font_lora;
       font-size: 1.2rem;
       font-weight: 600;
       line-height: 30px;
     } 
-    input{
+    & input{
       border: 1px solid @blue;
       height: 50px;
       width: 340px;
@@ -81,7 +82,7 @@ nav{
       line-height: 25px;
       color: @darkgrey;
       span{
-        color: black;
+        color: @black;
       }
     }
   }
@@ -163,14 +164,14 @@ aside{
     margin: 70px 50px;
   }
   input{     
-      border: 1px solid @blue;
+      border: 1px solid @grey;
       height: 50px;
-      width: 270px;     
+      width: 100%;     
   }
   .fa-magnifying-glass{
       position: absolute;
       top: 40%;
-      right: 12%;
+      right: 5%;
   }
   input::placeholder{
     font-family: @font_poppins;
@@ -186,7 +187,7 @@ aside{
     a{
       text-decoration: none;
       font-family: @font_poppins;
-      color: black;
+      color: @black;
     }
     & span{
       float: right;
@@ -215,9 +216,15 @@ aside{
         float: left;
         padding-right: 10px;
       }
-      h3{
+      a{
         font-family: @font_lora;
-
+        text-decoration: none;
+        color: @black;
+        padding-right: 10%;
+        transition: all 0.2s ease-in-out;
+        &:hover{
+          color: @blue;
+        }
       }
       span{
         font-family: @font_poppins;
@@ -235,30 +242,37 @@ aside{
     h4{
       .h4();
     }
-    button{
+    a{
       font-family: @font_poppins;
       font-size: 11px;
-      line-height: 20px;
-      margin: 3px;  
+      line-height: 40px;
+      border: 1px solid @grey;
+      border-radius: 5px;
+      text-decoration: none;
+      color: @black; 
+      padding: 7px;
+      overflow: hidden;
+      &:hover{
+        border: 1px solid @black;
+      }
     }
   }
   .newsletter{
-      margin-top: 70px;
       .filter{
         margin-top: 40px;
         background: url(../images/bg_1.jpg) 50% 25% no-repeat;
         filter: brightness(40%);
         background-position: center;
         background-size: 500px;
-        width: 350px;
+        width: 26%;
         height: 320px;  
         position: absolute;      
       }
       .news_text{
         .padd(){
-          padding-top: 70px;
-          padding-left: 20px;
-          padding-right: 50px;
+          padding-top: 20%;
+          padding-left: 40px;
+          padding-right: 10%;
         }
         
         position: relative;
@@ -274,14 +288,42 @@ aside{
           .padd();
           padding-top: 10px;
         }
-        input{
+        .btn_size{
           height: 50px;
-          width: 300px;
-          margin-left: 20px;
+          width: 75%;
+          margin: 5% 10%;
+        }
+        input{  
+          .btn_size();       
           background: transparent;
           border: 1px solid @grey;
-          
+          &::placeholder{
+            color: @grey;
+            font-family: @font_poppins;
+            font-weight: 500;
+            font-size: 1rem;
+          }
+        }
+        button{
+          .btn_size();
+          margin-top: 0;
+          font-family: @font_poppins;
+          font-size: 1rem;
+          background-color: #fff;
         }
       }
+  }
+  .paragraph_block{
+    p{
+      font-family: @font_poppins;
+      line-height: 25px;
+      color: @darkgrey;
+      margin: 0 35px;
+      font-size: 0.9rem;
+    }
+    h4{
+      .h4();
+      margin:25px 35px 0;
+    }
   }
 }

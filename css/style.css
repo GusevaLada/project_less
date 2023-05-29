@@ -209,7 +209,7 @@ nav ul a {
   transition: all 0.2s ease-out;
 }
 nav ul a:hover {
-  color: black;
+  color: #000000;
   border-bottom: 3px solid #1eafed;
 }
 nav .active {
@@ -225,7 +225,7 @@ nav .logo {
 }
 nav .sub_block {
   padding-left: 15px;
-  padding-top: 130px;
+  padding-top: 30%;
 }
 nav .sub_block h4 {
   font-family: 'Lora', serif;
@@ -254,7 +254,7 @@ nav .sub_block p {
   color: #4c4c4d;
 }
 nav .sub_block p span {
-  color: black;
+  color: #000000;
 }
 main {
   width: 50%;
@@ -323,14 +323,14 @@ aside .search_bar {
   margin: 70px 50px;
 }
 aside input {
-  border: 1px solid #1eafed;
+  border: 1px solid #cdcdcd;
   height: 50px;
-  width: 270px;
+  width: 100%;
 }
 aside .fa-magnifying-glass {
   position: absolute;
   top: 40%;
-  right: 12%;
+  right: 5%;
 }
 aside input::placeholder {
   font-family: 'Poppins', sans-serif;
@@ -350,7 +350,7 @@ aside .categories h4 {
 aside .categories a {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  color: black;
+  color: #000000;
 }
 aside .categories span {
   float: right;
@@ -382,8 +382,15 @@ aside .aside_articles .article_block img {
   float: left;
   padding-right: 10px;
 }
-aside .aside_articles .article_block h3 {
+aside .aside_articles .article_block a {
   font-family: 'Lora', serif;
+  text-decoration: none;
+  color: #000000;
+  padding-right: 10%;
+  transition: all 0.2s ease-in-out;
+}
+aside .aside_articles .article_block a:hover {
+  color: #1eafed;
 }
 aside .aside_articles .article_block span {
   font-family: 'Poppins', sans-serif;
@@ -404,14 +411,19 @@ aside .tag_block h4 {
   color: #4c4c4d;
   padding-bottom: 25px;
 }
-aside .tag_block button {
+aside .tag_block a {
   font-family: 'Poppins', sans-serif;
   font-size: 11px;
-  line-height: 20px;
-  margin: 3px;
+  line-height: 40px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000000;
+  padding: 7px;
+  overflow: hidden;
 }
-aside .newsletter {
-  margin-top: 70px;
+aside .tag_block a:hover {
+  border: 1px solid #000000;
 }
 aside .newsletter .filter {
   margin-top: 40px;
@@ -419,7 +431,7 @@ aside .newsletter .filter {
   filter: brightness(40%);
   background-position: center;
   background-size: 500px;
-  width: 350px;
+  width: 26%;
   height: 320px;
   position: absolute;
 }
@@ -433,23 +445,58 @@ aside .newsletter .news_text h4 {
   color: #4c4c4d;
   padding-bottom: 25px;
   color: white;
-  padding-top: 70px;
-  padding-left: 20px;
-  padding-right: 50px;
+  padding-top: 20%;
+  padding-left: 40px;
+  padding-right: 10%;
 }
 aside .newsletter .news_text p {
   font-family: 'Poppins', sans-serif;
   color: #cdcdcd;
   line-height: 25px;
-  padding-top: 70px;
-  padding-left: 20px;
-  padding-right: 50px;
+  padding-top: 20%;
+  padding-left: 40px;
+  padding-right: 10%;
   padding-top: 10px;
+}
+aside .newsletter .news_text .btn_size {
+  height: 50px;
+  width: 75%;
+  margin: 5% 10%;
 }
 aside .newsletter .news_text input {
   height: 50px;
-  width: 300px;
-  margin-left: 20px;
+  width: 75%;
+  margin: 5% 10%;
   background: transparent;
   border: 1px solid #cdcdcd;
+}
+aside .newsletter .news_text input::placeholder {
+  color: #cdcdcd;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+aside .newsletter .news_text button {
+  height: 50px;
+  width: 75%;
+  margin: 5% 10%;
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background-color: #fff;
+}
+aside .paragraph_block p {
+  font-family: 'Poppins', sans-serif;
+  line-height: 25px;
+  color: #4c4c4d;
+  margin: 0 35px;
+  font-size: 0.9rem;
+}
+aside .paragraph_block h4 {
+  font-family: 'Lora', serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #4c4c4d;
+  padding-bottom: 25px;
+  margin: 25px 35px 0;
 }
