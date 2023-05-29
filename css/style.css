@@ -194,6 +194,7 @@ nav {
   width: 20%;
   margin: auto 0;
   position: fixed;
+  border-left: 1px solid #cdcdcd;
 }
 nav ul {
   padding-left: 30px;
@@ -209,7 +210,6 @@ nav ul a {
   transition: all 0.2s ease-out;
 }
 nav ul a:hover {
-  color: #000000;
   border-bottom: 3px solid #1eafed;
 }
 nav .active {
