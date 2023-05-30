@@ -187,14 +187,25 @@
   font-display: swap;
   src: url(https://fonts.gstatic.com/s/abrilfatface/v19/zOL64pLDlL1D99S8g8PtiKchm-A.ttf) format('truetype');
 }
+.block_anim {
+  transform: translateY(100%);
+  animation: show 1s forwards;
+}
+@keyframes show {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 body {
   display: flex;
 }
 nav {
-  width: 20%;
+  width: 25%;
   margin: auto 0;
   position: fixed;
-  border-left: 1px solid #cdcdcd;
 }
 nav ul {
   padding-left: 30px;
@@ -236,7 +247,7 @@ nav .sub_block h4 {
 nav .sub_block input {
   border: 1px solid #1eafed;
   height: 50px;
-  width: 340px;
+  width: 90%;
 }
 nav .sub_block .fa-paper-plane {
   position: relative;
@@ -259,22 +270,21 @@ nav .sub_block p span {
 main {
   width: 49%;
   margin: 0 0 0 25%;
-  padding-top: 50px;
   border-left: 1px solid #cdcdcd;
 }
 main .post_block {
   padding-left: 50px;
-  margin-bottom: 50px;
+  margin: 50px 0;
   display: flex;
-  opacity: 0;
-  animation: show 3s forwards;
+  transform: translateY(100%);
+  animation: show 1s forwards;
 }
 @keyframes show {
   0% {
-    opacity: 0;
+    transform: translateY(100%);
   }
   100% {
-    opacity: 1;
+    transform: translateY(0);
   }
 }
 main .post_block .text_block {
@@ -354,30 +364,18 @@ main .page_button .active_btn {
   background-color: #1eafed;
   color: white;
 }
-.block_anim {
-  opacity: 0;
-  animation: show 3s forwards;
-}
-@keyframes show {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 aside {
-  opacity: 0;
-  animation: show 3s forwards;
+  transform: translateY(100%);
+  animation: show 1s forwards;
   width: 26%;
   background-color: #f8f9fb;
 }
 @keyframes show {
   0% {
-    opacity: 0;
+    transform: translateY(100%);
   }
   100% {
-    opacity: 1;
+    transform: translateY(0);
   }
 }
 aside .h4 {
@@ -500,7 +498,7 @@ aside .newsletter .filter {
   filter: brightness(40%);
   background-position: center;
   background-size: 500px;
-  width: 26%;
+  width: 100%;
   height: 320px;
   position: absolute;
 }
