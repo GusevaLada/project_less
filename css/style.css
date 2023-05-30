@@ -291,7 +291,7 @@ main .post_block .text_block {
   width: 70%;
 }
 main .post_block .text_block h3 {
-  font-size: 30px;
+  font-size: 1.8rem;
   line-height: 45px;
   font-weight: 400;
   padding-right: 25px;
@@ -363,6 +363,32 @@ main .page_button a {
 main .page_button .active_btn {
   background-color: #1eafed;
   color: white;
+}
+main .travel_post img {
+  width: 660px;
+  margin: 6%;
+  height: 400px;
+  object-fit: cover;
+}
+main .travel_post h2 {
+  font-size: 2rem;
+  margin: 0 6% 3%;
+}
+main .travel_post p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  margin: 0 6% 6%;
+  line-height: 25px;
+  color: #4c4c4d;
+}
+main .travel_post .post_author {
+  display: flex;
+}
+main .travel_post .post_author img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 6%;
 }
 aside {
   transform: translateY(100%);
