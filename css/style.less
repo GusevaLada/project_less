@@ -77,19 +77,19 @@ nav{
 
 
 main{
-  margin: 0 0 0 25%;
-  
+  margin: 0 0 0 25%; 
   border-left: 1px solid @grey;
-  
-  
+  width: 49%;
+  margin: 0 0 0 25%;  
+  border-left: 1px solid @grey;  
+
   .post_block{
     padding-left: 50px;
     margin: 50px 0;
     display:flex;
     .block_anim();
     .text_block{
-      width: 70%; 
-    
+      width: 70%;  
       h3{
         a{
           text-decoration: none;
@@ -97,7 +97,7 @@ main{
           font-family: @font_lora;
         }
         
-        font-size: 30px;
+        font-size: 1.8rem;
         line-height: 45px;
         font-weight: @f1;
         padding-right: 25px;
@@ -167,10 +167,41 @@ main{
     }
   }
 
+
+  .travel_post{
+    img{
+      width: 660px;
+      margin: 6%;
+      height: 400px;
+      object-fit: cover;
+    }
+    h2{
+      @font-family: @font_lora;
+      font-size: 2rem;
+      margin: 0 6% 3%;
+    }
+    p{
+      font-family: @font_poppins;
+      font-size: 0.9rem;
+      margin: 0 6% 6%;
+      line-height: 25px;
+      color: @darkgrey;
+    }
+    .post_author{
+      display:flex;
+      img{
+        width: 60px;
+        height: auto;
+        border-radius: 50%;
+        margin:0 6%;
+      }
+
+      p{
+
+      }
+    }
+  }
 }
-
-
-
 
 
 aside{
