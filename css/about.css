@@ -199,9 +199,6 @@
     transform: translateY(0);
   }
 }
-main {
-  width: 100%;
-}
 .about {
   display: flex;
 }
