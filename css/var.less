@@ -13,6 +13,13 @@
 @blue: #1EAFED;
 @grey:#cdcdcd;
 @black: #000;
+@white: #fff;
+@ligthgrey: #f8f9fb;
+
+@desctop: 1200px;
+@table: 900px;
+@phone: 600px;
+
 
 .block_anim{
   transform: translateY(100%);
@@ -21,4 +28,47 @@
     0% {transform: translateY(100%);}
     100% {transform: translateY(0);}
   }  
+}
+
+.a(){
+  a{
+    text-decoration: none;
+    display: block;
+    color: @white;
+    background-color: @blue;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 60px;
+    font-family: @font_poppins;
+    font-size: 1rem;
+    margin: 20px 0;
+    
+    &:hover{
+      color: @blue;
+      background-color: @white;
+      border: 1px solid @blue;
+    }
+  }
+  
+}
+
+
+.desctop(@content){
+  @media screen and (max-width: @desctop){
+      @content();
+  }
+}
+
+.table(@content){
+  @media screen and (max-width: @table){
+    @content();
+  }
+}
+
+.phone(@content){
+  @media screen and (max-width: @phone){
+    @content();
+  }
 }

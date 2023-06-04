@@ -42,7 +42,7 @@ nav{
     h4{
       font-family: @font_lora;
       font-size: 1.2rem;
-      font-weight: 600;
+      font-weight: @f3;
       line-height: 30px;
     } 
     & input{
@@ -74,16 +74,29 @@ nav{
 
 }
 
-
-
+.bar_btn{
+  display: none;
+  position: fixed;
+  top: 5%;
+  left: 2%;
+  font-size: 25px;
+}
+.close_btn{
+  position: fixed;
+  top: 5%;
+  left: 2%;
+  font-size: 25px;
+  display: none;
+}
 main{
   margin: 0 0 0 25%; 
-  border-left: 1px solid @grey;
+  border-left: 1px solid @grey; 
   width: 49%;
-  margin: 0 0 0 25%;  
-  border-left: 1px solid @grey;  
-
-  .post_block{
+}
+.fashion{
+  width: 150%;
+}
+.post_block{
     padding-left: 50px;
     margin: 50px 0;
     display:flex;
@@ -147,58 +160,177 @@ main{
     
   }
 
-  .page_button{
-    margin:50px 10px;
-    display:flex;
-    a{
-      display: block;
-      text-decoration: none;
-      border-radius: 50%;
-      border: 1px solid @blue;
-      height: 40px;
-      width: 40px;
-      line-height: 40px;
-      color: @blue;
-      text-align: center;
-    }
-    .active_btn{
-      background-color: @blue;
-      color: white;
-    }
+.page_button{
+  margin:50px 10px;
+  display:flex;
+  a{
+    display: block;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 1px solid @blue;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    color: @blue;
+    text-align: center;
   }
+  .active_btn{
+    background-color: @blue;
+    color: @white;
+  }
+}
 
-
-  .travel_post{
+.travel_post{
+  .block_anim();
+  margin: 60px 40px 150px;
+  .post_text{
     img{
-      width: 660px;
-      margin: 6%;
       height: 400px;
+      width: 660px;
       object-fit: cover;
-    }
+    }  
     h2{
-      @font-family: @font_lora;
+      font-family: @font_lora;
       font-size: 2rem;
-      margin: 0 6% 3%;
+      margin: 30px 0;
     }
     p{
       font-family: @font_poppins;
       font-size: 0.9rem;
-      margin: 0 6% 6%;
-      line-height: 25px;
+      color: @darkgrey;
+      overflow: hidden;
+      line-height: 30px;
+    }
+  }
+  
+
+  .post_author{
+    margin-top: 20px;
+    display: flex;
+    img{
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+    }
+    
+    .post_author_text{
+      display: flex;
+      flex-direction: column;
+      margin: 10px 15px; 
+      span{
+        font-family: @font_poppins;
+        font-size: 1rem;
+        color: @grey;
+      }
+      a{
+        text-decoration: underline;
+        font-family: @font_lora;
+        font-size: 1.1rem;
+        font-weight: @f3;
+        color: @black;
+      }
+      p{
+        font-family: @font_lora;
+        font-size: 1rem;
+        line-height: 30px;
+       
+      }  
+    }
+    
+  }
+
+  .post_btn{
+    display: flex;
+    position: absolute;
+    width: 45%;
+
+    .a();
+    .post_likes{
+      
+      position: absolute;
+      top: 50%;
+      right: -120%;
+      i{
+        color: @grey;
+        margin: 0 5px;
+      }
+      span{
+        color: @grey;
+      }
+      
+
+    }
+  }
+
+
+}
+
+.about{
+  display:flex;
+  width: 150%;
+  img{
+    width:550px;
+    margin-top: -5%;
+    
+  }
+  .about_text{
+    font-family: @font_poppins;
+    margin: 15% 50px 0;
+    
+    .block_anim();
+    h2{
+      font-size: 50px;
+      font-weight: @f3;
+      span{
+        font-weight: @f4;
+        color: @blue;
+      }
+    }
+    p{
+      padding-top: 20px;
+      line-height:30px;
       color: @darkgrey;
     }
-    .post_author{
-      display:flex;
-      img{
-        width: 60px;
-        height: auto;
-        border-radius: 50%;
-        margin:0 6%;
-      }
+  }
+}
 
-      p{
+.contact{
+  width: 150%; 
+  h2{
+    font-family: @font_lora;
+    font-size: 1.7rem;
+    margin: 50px 30px 0;
+  }
+  .contact_address{
+    display: flex;
+  }
+  .contact_block{
+    background-color: @ligthgrey;
+    margin: 20px;
+    width: 240px;
+    height: 150px;
+    font-family: @font_poppins;
+    color: @darkgrey;
 
-      }
+    p{
+      margin: 50px 20px;
+    }
+  }
+  .a();
+  form{
+    background-color: @ligthgrey;
+    height: 560px;
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    input{
+      height: 50px;
+      width: 420px;
+      margin: 20px;
+    }
+    a{
+      margin-left: 20px;
     }
   }
 }
@@ -319,7 +451,7 @@ aside{
         background: url(../images/bg_1.jpg) 50% 25% no-repeat;
         filter: brightness(40%);
         background-position: center;
-        background-size: 500px;
+        background-size: 150%;
         width: 100%;
         height: 320px;  
         position: absolute;      
@@ -334,7 +466,7 @@ aside{
         position: relative;
         h4{
           .h4();
-          color: white;
+          color: @white;
           .padd();
         }
         p{
@@ -369,6 +501,11 @@ aside{
         }
       }
   }
+  .archives_block{
+    h4{
+      margin-top: 70px;
+    }
+  }
   .paragraph_block{
     p{
       font-family: @font_poppins;
@@ -382,4 +519,81 @@ aside{
       margin:25px 35px 0;
     }
   }
+}
+
+
+
+.desctop({
+    body{
+      flex-direction: column;
+    }
+    main{
+      width: 75%;
+    }
+    aside{
+      width: 75%;
+      margin: 0 0 0 25%;
+      .aside_articles{
+        padding-top: 70px;
+      }
+      .tag_block{
+        margin-top: 70px;
+      }
+      .newsletter .filter{
+        height: 380px;
+      }
+      .newsletter .news_text h4{
+        padding-top: 11%;
+      }
+    }
+
+    .bar_btn{
+      display: block;
+    }
+    .menu_block{
+      display: none;
+    }
+     main{
+      margin: 0 0 0 5%;
+      border-left: none;
+    }
+  });
+
+.table({
+    
+   
+    aside{
+      width: 80%;
+      margin: 0 10% 0;
+    }
+    .fashion{
+      width: 100%;
+    }
+    .contact_address{
+      flex-direction: column;
+    }
+});
+
+.phone({
+    .post_block{
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      text-align: center;
+    } 
+    img{
+      margin: 0;
+    }
+   
+});
+
+.show{
+  display: block; 
+}
+.no_show{
+  display: none;
+}
+.show_margin{
+  margin-left: 30%;
+  border-left: 1px solid @grey;
 }
